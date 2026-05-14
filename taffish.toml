@@ -6,6 +6,12 @@ release = 1
 license = "GPL-3.0"
 main = "src/main.taf"
 
+[meta]
+domain = "bio"
+categories = ["genomics", "variant-calling", "vcf-bcf"]
+keywords = ["vcf", "bcf", "variant", "genotype", "annotation", "htslib", "bgzip", "tabix"]
+description = "Toolkit for variant calling and manipulating VCF/BCF genomic variant files."
+
 [repository]
 url = "https://github.com/taffish/bcftools"
 
@@ -24,6 +30,10 @@ build_platforms = "linux/amd64,linux/arm64"
 [upstream]
 type = "github"
 repo = "samtools/bcftools"
+license = "MIT/Expat or GPL"
+citation = "Danecek et al. 2021"
+doi = "10.1093/gigascience/giab008"
+pmid = "33590861"
 watch = "tags"
 
 [smoke]
