@@ -1,4 +1,4 @@
-taf-bcftools 1.23.1-r1
+taf-bcftools 1.23.1-r2
 
 TAFFISH wrapper for BCFtools, a command-line toolkit for variant calling,
 VCF/BCF manipulation, filtering, normalization, annotation, indexing, and
@@ -81,8 +81,14 @@ Notes:
     Debian 12 runtime image.
 
 Container:
-  image: ghcr.io/taffish/bcftools:1.23.1-r1
+  image: ghcr.io/taffish/bcftools:1.23.1-r2
   supported backends: apptainer, podman, docker
+
+License:
+  TAFFISH app packaging: Apache-2.0.
+  Upstream software: MIT/Expat or GPL.
+  Bundled components, data, models, and external resources keep their
+  own license terms.
 
 Upstream:
   project: BCFtools

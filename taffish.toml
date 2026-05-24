@@ -2,8 +2,8 @@
 name = "bcftools"
 kind = "tool"
 version = "1.23.1"
-release = 1
-license = "GPL-3.0"
+release = 2
+license = "Apache-2.0"
 main = "src/main.taf"
 
 [meta]
@@ -23,13 +23,18 @@ pipe = true
 command_mode = true
 
 [container]
-image = "ghcr.io/taffish/bcftools:1.23.1-r1"
+image = "ghcr.io/taffish/bcftools:1.23.1-r2"
 dockerfile = "docker/Dockerfile"
 build_platforms = "linux/amd64,linux/arm64"
 
 [upstream]
+name = "BCFtools"
 type = "github"
 repo = "samtools/bcftools"
+homepage = "https://www.htslib.org/"
+release_url = "https://github.com/samtools/bcftools/releases/tag/1.23.1"
+downloads = "https://github.com/samtools/bcftools/releases/download/1.23.1/bcftools-1.23.1.tar.bz2"
+version = "1.23.1"
 license = "MIT/Expat or GPL"
 citation = "Danecek et al. 2021"
 doi = "10.1093/gigascience/giab008"

@@ -1,2 +1,0 @@
-<taf-app:container:ghcr.io/taffish/bcftools:1.23.1-r1>
-bcftools ::*ARGV*::

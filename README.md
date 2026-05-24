@@ -22,7 +22,7 @@ taf install bcftools
 Install the exact release:
 
 ```sh
-taf install bcftools 1.23.1-r1
+taf install bcftools 1.23.1-r2
 ```
 
 For local testing before the app is published to the public index:
@@ -99,9 +99,9 @@ taf-bcftools bcftools --version
 ```text
 name: bcftools
 command: taf-bcftools
-version: 1.23.1-r1
+version: 1.23.1-r2
 kind: tool
-image: ghcr.io/taffish/bcftools:1.23.1-r1
+image: ghcr.io/taffish/bcftools:1.23.1-r2
 ```
 
 ## Container
@@ -155,6 +155,10 @@ published image can be inspected, that the upstream executable and companion
 tools are available, that GSL-enabled BCFtools features are present, and that
 the packaged BCFtools command reports version 1.23.1.
 
+## License Boundary
+
+The TAFFISH app packaging files are licensed under Apache-2.0. The packaged upstream BCFtools software is covered by: MIT/Expat or GPL. Bundled third-party components, datasets, models, and external resources keep their own license terms.
+
 ## Upstream
 
 - Project: BCFtools
@@ -176,9 +180,9 @@ taf compile -- --help
 taf compile -- bcftools --version
 taf publish --release --dry-run
 docker build --check -f docker/Dockerfile .
-docker build -t ghcr.io/taffish/bcftools:1.23.1-r1 -f docker/Dockerfile .
-docker run --rm ghcr.io/taffish/bcftools:1.23.1-r1 bcftools --version
-docker run --rm ghcr.io/taffish/bcftools:1.23.1-r1 bcftools plugin -l
+docker build -t ghcr.io/taffish/bcftools:1.23.1-r2 -f docker/Dockerfile .
+docker run --rm ghcr.io/taffish/bcftools:1.23.1-r2 bcftools --version
+docker run --rm ghcr.io/taffish/bcftools:1.23.1-r2 bcftools plugin -l
 ```
 
 The repository wrapper files are licensed under Apache-2.0. The packaged
